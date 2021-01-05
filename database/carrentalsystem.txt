@@ -1,0 +1,97 @@
+===Database carrentalsystem
+
+== Table structure for table admin
+
+|------
+|Column|Type|Null|Default
+|------
+|//**password**//|varchar(100)|No|
+== Dumping data for table admin
+
+|admin
+== Table structure for table aprroval
+
+|------
+|Column|Type|Null|Default
+|------
+|//**idupdate**//|int(11)|No|
+|availability|varchar(50)|No|
+|bookingstatus|varchar(255)|No|
+|carcondition|varchar(255)|No|
+|currentloc|varchar(255)|No|
+|staffname|varchar(255)|No|
+|number|int(255)|No|
+== Dumping data for table aprroval
+
+|1|Bezza now at customer|Pending|Good|Penang|Mogana Priya|1111482783
+|2|Avanza now free|Booked|Perfect|Kuala Lumpur|Harrsion |124539432
+|3|Myvi at Workshop|cancel|in maintanance|office workshop|0|0
+|4|Hiece Not available|cancel|out of country|Australia|no|0
+|5|Honda Civic now available|Success|Perfect|office |Saras|123354726
+== Table structure for table booking
+
+|------
+|Column|Type|Null|Default
+|------
+|//**idbooking**//|int(10)|No|
+|fullname|varchar(255)|No|
+|age|int(20)|No|
+|icnum|varchar(255)|No|
+|caddress|varchar(255)|No|
+|contactnumber|int(255)|No|
+|licensetype|varchar(100)|No|
+|carname|varchar(100)|No|
+|bookingdate|date|No|
+|returndate|date|No|
+|email|varchar(100)|No|
+== Dumping data for table booking
+
+|1|Leo Melvin|20|000209090159|Mata Ayer 2|1111482783|B2,D|Bezza|2020-12-24|2020-12-25|leo@gmail.com
+|2|Danish|22|000222090076|Kangar|111112254|D|Avanza|2020-12-23|2020-12-25|danish@gmail.com
+|3|Thurkes|20|000481090078|Pauh,Perlis|1761551222|b2,d|MYVI|2020-12-25|2020-12-26|thurkes@gmail.com
+|4|Suzana Ann|23|000510090788|sungai petani|124435635|D|Hiece|2020-12-11|2020-12-17|suzanaann55@gmail.com
+|5|Suganesan|22|990988109987|Sungai Besi|124453725|D|Honda Civic|2020-12-30|2020-12-31|suganesan@gmail.com
+== Table structure for table car
+
+|------
+|Column|Type|Null|Default
+|------
+|//**idCar**//|int(50)|No|
+|**carname**|varchar(100)|No|
+|carbrand|varchar(100)|No|
+|priceperhour|int(11)|No|
+|priceperday|int(11)|No|
+|priceperweek|int(11)|No|
+|carpicture|varchar(100)|Yes|NULL
+== Dumping data for table car
+
+|5|Bezza|Proton|20|150|400|images/pic2.jpg
+|6|IRIZ|Proton|63|488|280|uploads/pic1.jpg
+|7|Avanza|Toyota MPV|30|300|150|uploads/toyota-avanza-2014-recall-fuel-leak.jpg
+|8|Civic|Honda|50|600|200|uploads/6d4edd4fecdf4b1f92d0468e0d31e84c_750x420.jpg
+|9|X50|Proton|100|800|400|uploads/download (1).jpg
+|10|Hiece|Toyota|100|890|400|uploads/toyota-hiace-for-rent-kl-selangor.png
+|11|MYVI|Perodua|20|488|190|uploads/Myvi-1.5-SE_1_4_FRONT-LEFT_LIGHTS-ON.jpg
+== Table structure for table customer
+
+|------
+|Column|Type|Null|Default
+|------
+|//**idCustomer**//|int(50)|No|
+|**username**|varchar(100)|No|
+|password|varchar(100)|No|
+== Dumping data for table customer
+
+|1|leo|leo123
+|2|herman|herman
+== Table structure for table staff
+
+|------
+|Column|Type|Null|Default
+|------
+|//**idStaff**//|int(50)|No|
+|username|varchar(100)|No|
+|password|varchar(100)|No|
+== Dumping data for table staff
+
+|1|staff|staff
